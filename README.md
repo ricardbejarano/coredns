@@ -44,8 +44,6 @@ Available on [Quay](https://quay.io) as:
 
 ## Filesystem
 
-The images' contents are:
-
 ```
 /
 ├── coredns
