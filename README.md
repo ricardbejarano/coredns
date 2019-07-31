@@ -22,10 +22,11 @@ Available on [Quay](https://quay.io) as:
 
 ## Features
 
-* Super tiny (about `~42.1MB`)
+* Super tiny (about `42.1MB`)
 * Compiled from source during build time
-* Built `FROM scratch`, see [Filesystem](#filesystem) for an exhaustive list of the images' contents
+* Built `FROM scratch`, with zero bloat (see [Filesystem](#filesystem))
 * Reduced attack surface (no shell, no UNIX tools, no package manager...)
+* Runs as unprivileged (non-`root`) user
 
 
 ## Configuration
