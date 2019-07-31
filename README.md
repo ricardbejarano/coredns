@@ -33,7 +33,7 @@ Available on [Quay](https://quay.io) as:
 
 ### Volumes
 
-- Bind your **configuration** at `/Corefile`.
+- Mount your **configuration** at `/Corefile`.
 
 
 ## Building
