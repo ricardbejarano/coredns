@@ -18,11 +18,11 @@ RUN apk add make bash git ca-certificates && \
 
 FROM scratch
 
-COPY --from=build /tmp/coredns/coredns /
-COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
-COPY --from=build /tmp/group \
-                  /tmp/passwd \
-                  /etc/
+COPY --from=build --chown=100:100 /tmp/coredns/coredns /
+COPY --from=build --chown=100:100 /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+COPY --from=build --chown=100:100 /tmp/group \
+                                  /tmp/passwd \
+                                  /etc/
 
 USER 100:100
 ENTRYPOINT ["/coredns"]
