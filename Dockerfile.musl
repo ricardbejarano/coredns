@@ -1,13 +1,13 @@
 FROM golang:1.12.7-alpine AS build
 
-ARG COREDNS_VERSION="1.6.0"
-ARG COREDNS_CHECKSUM="8bc72e4ee09591bbc1792421a1e6f7d0d791b484c299ffa65fd236950d541d27"
+ARG VERSION="1.6.0"
+ARG CHECKSUM="8bc72e4ee09591bbc1792421a1e6f7d0d791b484c299ffa65fd236950d541d27"
 
-ADD https://github.com/coredns/coredns/archive/v$COREDNS_VERSION.tar.gz /tmp/coredns.tar.gz
+ADD https://github.com/coredns/coredns/archive/v$VERSION.tar.gz /tmp/coredns.tar.gz
 
-RUN [ "$COREDNS_CHECKSUM" = "$(sha256sum /tmp/coredns.tar.gz | awk '{print $1}')" ] && \
+RUN [ "$CHECKSUM" = "$(sha256sum /tmp/coredns.tar.gz | awk '{print $1}')" ] && \
     tar -C /tmp -xf /tmp/coredns.tar.gz && \
-    mv /tmp/coredns-$COREDNS_VERSION /tmp/coredns
+    mv /tmp/coredns-$VERSION /tmp/coredns
 
 RUN apk add make bash git ca-certificates && \
     cd /tmp/coredns && \
