@@ -9,15 +9,15 @@
 
 Available on [Docker Hub](https://hub.docker.com) as [`ricardbejarano/coredns`](https://hub.docker.com/r/ricardbejarano/coredns):
 
-- [`1.6.0-glibc`, `1.6.0`, `glibc`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/coredns/blob/master/Dockerfile.glibc)
-- [`1.6.0-musl`, `musl` *(Dockerfile.musl)*](https://github.com/ricardbejarano/coredns/blob/master/Dockerfile.musl)
+- [`1.6.1-glibc`, `1.6.1`, `glibc`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/coredns/blob/master/Dockerfile.glibc)
+- [`1.6.1-musl`, `musl` *(Dockerfile.musl)*](https://github.com/ricardbejarano/coredns/blob/master/Dockerfile.musl)
 
 ### Quay
 
 Available on [Quay](https://quay.io) as:
 
-- [`quay.io/ricardbejarano/coredns-glibc`](https://quay.io/repository/ricardbejarano/coredns-glibc), tags: [`1.6.0`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/coredns/blob/master/Dockerfile.glibc)
-- [`quay.io/ricardbejarano/coredns-musl`](https://quay.io/repository/ricardbejarano/coredns-musl), tags: [`1.6.0`, `master`, `latest` *(Dockerfile.musl)*](https://github.com/ricardbejarano/coredns/blob/master/Dockerfile.musl)
+- [`quay.io/ricardbejarano/coredns-glibc`](https://quay.io/repository/ricardbejarano/coredns-glibc), tags: [`1.6.1`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/coredns/blob/master/Dockerfile.glibc)
+- [`quay.io/ricardbejarano/coredns-musl`](https://quay.io/repository/ricardbejarano/coredns-musl), tags: [`1.6.1`, `master`, `latest` *(Dockerfile.musl)*](https://github.com/ricardbejarano/coredns/blob/master/Dockerfile.musl)
 
 
 ## Features
