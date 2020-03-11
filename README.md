@@ -16,7 +16,7 @@ Available on [Docker Hub](https://hub.docker.com) as [`ricardbejarano/coredns`](
 
 Available on [Quay](https://quay.io) as:
 
-- [`quay.io/ricardbejarano/coredns-glibc`](https://quay.io/repository/ricardbejarano/coredns-glibc), tags: [`1.6.7`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/coredns/blob/master/Dockerfile.glibc) (about `41.5MB`)
+- [`quay.io/ricardbejarano/coredns`](https://quay.io/repository/ricardbejarano/coredns), [`quay.io/ricardbejarano/coredns-glibc`](https://quay.io/repository/ricardbejarano/coredns-glibc), tags: [`1.6.7`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/coredns/blob/master/Dockerfile.glibc) (about `41.5MB`)
 - [`quay.io/ricardbejarano/coredns-musl`](https://quay.io/repository/ricardbejarano/coredns-musl), tags: [`1.6.7`, `master`, `latest` *(Dockerfile.musl)*](https://github.com/ricardbejarano/coredns/blob/master/Dockerfile.musl) (about `41.6MB`)
 
 
