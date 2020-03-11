@@ -7,22 +7,20 @@ ADD https://github.com/coredns/coredns/archive/v$VERSION.tar.gz /tmp/coredns.tar
 
 RUN [ "$CHECKSUM" = "$(sha256sum /tmp/coredns.tar.gz | awk '{print $1}')" ] && \
     tar -C /tmp -xf /tmp/coredns.tar.gz && \
-    mv /tmp/coredns-$VERSION /tmp/coredns
+    apk add bash make git ca-certificates && \
+    cd /tmp/coredns-$VERSION && \
+      make
 
-RUN apk add make bash git ca-certificates && \
-    cd /tmp/coredns && \
-      make && \
-    echo "nogroup:*:100:nobody" > /tmp/group && \
-    echo "nobody:*:100:100:::" > /tmp/passwd
+RUN mkdir -p /rootfs/etc/ssl/certs && \
+    cp /tmp/coredns-$VERSION/coredns /rootfs/ && \
+    echo "nogroup:*:100:nobody" > /rootfs/etc/group && \
+    echo "nobody:*:100:100:::" > /rootfs/etc/passwd && \
+    cp /etc/ssl/certs/ca-certificates.crt /rootfs/etc/ssl/certs/
 
 
 FROM scratch
 
-COPY --from=build --chown=100:100 /tmp/coredns/coredns /
-COPY --from=build --chown=100:100 /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
-COPY --from=build --chown=100:100 /tmp/group \
-                                  /tmp/passwd \
-                                  /etc/
+COPY --from=build --chown=100:100 /rootfs /
 
 USER 100:100
 ENTRYPOINT ["/coredns"]
