@@ -1,7 +1,7 @@
 FROM golang:1 AS build
 
-ARG VERSION="1.6.9"
-ARG CHECKSUM="e100a946d5d60d936cb313bdb04fd96162d5a7229e08887ad497660acee4b36f"
+ARG VERSION="1.7.0"
+ARG CHECKSUM="7e436e9d0c0b84af863685e05d701b84247bb0f12b6dbf05ea87e165c1398b2b"
 
 ADD https://github.com/coredns/coredns/archive/v$VERSION.tar.gz /tmp/coredns.tar.gz
 
