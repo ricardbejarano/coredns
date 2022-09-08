@@ -20,13 +20,13 @@
 
 Available on Docker Hub as [`docker.io/ricardbejarano/coredns`](https://hub.docker.com/r/ricardbejarano/coredns):
 
-- [`1.9.3`, `latest` *(Dockerfile)*](Dockerfile)
+- [`1.9.4`, `latest` *(Dockerfile)*](Dockerfile)
 
 ### RedHat Quay
 
 Available on RedHat Quay as [`quay.io/ricardbejarano/coredns`](https://quay.io/repository/ricardbejarano/coredns):
 
-- [`1.9.3`, `latest` *(Dockerfile)*](Dockerfile)
+- [`1.9.4`, `latest` *(Dockerfile)*](Dockerfile)
 
 
 ## Configuration
