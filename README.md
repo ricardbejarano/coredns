@@ -1,5 +1,5 @@
 <div align="center">
-	<p><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/bus-stop_1f68f.png" width="100px"></p>
+	<p><img src="https://em-content.zobj.net/thumbs/160/apple/325/bus-stop_1f68f.png" width="100px"></p>
 	<h1>coredns</h1>
 	<p>Built-from-source container image of <a href="https://github.com/coredns/coredns">CoreDNS</a></p>
 	<code>docker pull quay.io/ricardbejarano/coredns</code>
