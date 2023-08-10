@@ -1,7 +1,7 @@
 FROM golang:1-alpine AS build
 
-ARG VERSION="1.10.1"
-ARG CHECKSUM="f47186452e5f2925e2c71135669afd9e03b9b55831417d33d612ef2fa69924a7"
+ARG VERSION="1.11.0"
+ARG CHECKSUM="967c12d2b170b7eb46314edf01013d1547932f62e963a68b5e57cc4c10f966b6"
 
 ADD https://github.com/coredns/coredns/archive/v$VERSION.tar.gz /tmp/coredns.tar.gz
 
